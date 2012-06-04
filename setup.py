@@ -1,17 +1,19 @@
 # -*- encoding: utf8 -*-
 from setuptools import setup, find_packages
 
+with open('README') as readme:
+        long_description = readme.read()
+
 setup(
     name="django-postfix",
-    version="0.1.a.dev",
+    use_hg_version=True,
     packages=find_packages(),
-    install_requires=[
-        'distribute',
-        'Django>=1.4',
-    ],
+    setup_requires=['hgtools',],
+    install_requires=['distribute','Django>=1.4'],
     author="Mario César Señoranis Ayala",
     author_email="mariocesar.c50@gmail.com",
-    description="",
+    description="A django app to manage postfix mailboxes",
+    long_description=long_description,
     license="MIT License",
     keywords="postfix mail django",
     url="http://bitbucket.org/creat1va/django-postfix",
