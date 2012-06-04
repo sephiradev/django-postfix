@@ -9,4 +9,5 @@ syntax: regexp
 ^var
 ^env
 ^build
+^dist
 ^.*egg-info
