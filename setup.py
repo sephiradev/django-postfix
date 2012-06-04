@@ -1,7 +1,7 @@
 # -*- encoding: utf8 -*-
 from setuptools import setup, find_packages
 
-with open('README') as readme:
+with open('README.rst') as readme:
         long_description = readme.read()
 
 setup(
