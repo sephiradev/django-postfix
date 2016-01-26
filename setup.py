@@ -6,9 +6,9 @@ with open('README.rst') as readme:
 
 setup(
     name="django-postfix",
-    use_hg_version=True,
     packages=find_packages(),
-    setup_requires=['hgtools',],
+    use_scm_version=True,
+    setup_requires=['setuptools_scm',],
     install_requires=['distribute','Django>=1.4'],
     author="Mario César Señoranis Ayala",
     author_email="mariocesar.c50@gmail.com",
